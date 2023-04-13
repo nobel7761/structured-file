@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>File modifier</title>
+  </head>
+
+  <body>
+    <div class="container mt-5 mx-auto">
+      <div class="mx-auto">
+        <div style="display: flex; justify-content: center">
+          <img
+            src="https://apurba.com.bd/themes/images/apurba_bangladesh_logo.png"
+            alt="Apurba Technologies Ltd."
+            style="width: 150px"
+          />
+        </div>
+        <h4 class="text-info text-center mt-3">Structured Tools</h4>
+
+        <div style="display: flex; gap: 20px">
+          <div style="width: 50%">
+            <input
+              class="form-control mt-2"
+              type="text"
+              id="header1"
+              placeholder="Header1"
+            />
+            <input
+              class="form-control mt-2"
+              type="text"
+              id="header2"
+              placeholder="Header2"
+            />
+            <input
+              class="form-control mt-2"
+              type="text"
+              id="header3"
+              placeholder="Header3"
+            />
+            <input
+              class="form-control mt-2"
+              type="text"
+              id="header4"
+              placeholder="Header4"
+            />
+          </div>
+          <div style="width: 50%">
+            <input
+              class="form-control mt-2"
+              type="text"
+              id="footer"
+              placeholder="Footer"
+            />
+          </div>
+        </div>
+
+        <p
+          class="text-danger"
+          style="font-style: italic; text-align: center; margin: 10pt 0"
+        >
+          **Always choose file after completing above fields
+        </p>
+
+        <div style="display: flex; justify-content: center">
+          <input
+            class="form-control"
+            style="margin: 4pt 0; width: 30%"
+            type="file"
+            id="myFile"
+          />
+        </div>
+      </div>
+      <h5 class="text-warning text-center">Preview</h5>
+      <hr hidden />
+
+      <textarea style="width: 100%; height: 100px" id="output"></textarea>
+      <br />
+
+      <div class="mx-auto" style="width: 500px">
+        <input
+          id="dwn"
+          class="form-control mt-2 btn-warning"
+          value="Download Modified File"
+          type="button"
+          onclick='doDL(document.getElementById("output").value)'
+        />
+      </div>
+
+      <br />
+      <br />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
